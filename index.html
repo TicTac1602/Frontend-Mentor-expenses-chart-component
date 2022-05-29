@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <!-- header -->
+    <div class="item-header">
+      <div class="balance">
+        <p class="balance_text">My balance</p>
+        <span class="balance_number">$921.48</span>
+      </div>
+      <img class="header_logo" src="./images/logo.svg" alt="logo" />
+    </div>
+
+    <aside class="content">
+      <h3 class="content_header">Spending - Last 7 days</h3>
+      
+      <div class="graph">
+        <div class="graph_bars toggle-bars">
+        </div>
+        <div class="graph_days">
+        </div>
+      </div>
+      <div class="content_line"></div>
+
+      <div class="content_summary">
+        <div class="total">
+          <p class="total_text">Total this month</p>
+          <span class="total_number">$478.33</span>
+        </div>
+        <div class="history">
+          <span class="history_number">+2.4%</span>
+          <p class="history_text">from last month</p>
+        </div>
+      </div>
+    </aside>
+  </main>
+  <script src="./main.js"></script>
+</body>
+</html>

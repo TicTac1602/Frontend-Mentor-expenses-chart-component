@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(27, 66%, 92%);
+}
+
+.container{
+    width: 33%;
+}
+
+.item-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(10, 79%, 65%);
+    padding: 1em;
+    border-radius: 1em;
+    color: white;
+    margin-bottom: 1em;
+}
+.balance{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.balance_text{
+    font-size: 12px;
+}
+.balance_number{
+    font-weight: 600;
+}
+
+.content{
+    background-color: white;
+    padding: 1em;
+    border-radius: 1em;
+}
+.graph{
+    margin-top: 2em;
+    min-height: 75%;
+}
+.graph_bars,.graph_days {
+    display: grid;
+    align-items: flex-end;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1rem;
+}
+.graph_bars .bar {
+    background-color: #ec775f;
+    border-radius: 2px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.graph_bars .bar_tooltip {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -120%);
+    font-size: .65rem;
+    font-weight: 700;
+    background-color: #382314;
+    color: #fff;
+    padding: .4em .3em;
+    border-radius: 3px;
+    z-index: 99;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.graph_days {
+    height: 1rem;
+    text-align: center;
+}
+
+.graph_days p {
+    font-size: .65rem;
+    padding: .5rem 0;
+    color: #93867b;
+}
+
+.content_summary{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total {
+    padding-right: 1rem;
+}
+
+.total_text {
+    color: #93867b;
+    font-size: .75rem;
+    margin-bottom: .2rem;
+}
+
+.total_number {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #382314;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.history_text {
+    font-size: .75rem;
+    color: #93867b;
+}
+
+.history_number {
+    font-size: .75rem;
+    font-weight: 700;
+    color: #382314;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: unset;
+    }
+
+}
